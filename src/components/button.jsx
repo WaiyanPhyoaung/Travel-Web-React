@@ -12,12 +12,9 @@ const Button = (props) => {
 
   const btnClass = `btn ${checkButtonStyle} ${checkButtonSize}`;
 
-  const handleClick = () => {
-    console.warn("Button was clicked");
-  };
   return (
     <Link to="/sign-up" className="btn-mobile">
-      <button className={btnClass} onClick={handleClick} type={type}>
+      <button className={btnClass} onClick={onClick} type={type}>
         {children}
       </button>
     </Link>
